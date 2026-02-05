@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Business Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+        .container {
+            width: 40%;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>E-Commerce Business Registration Form</h2>
+
+    <form>
+        <label>Business Name</label>
+        <input type="text" name="business_name" required>
+
+        <label>Owner Full Name</label>
+        <input type="text" name="owner_name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
+
+        <label>Business Type</label>
+        <select name="business_type" required>
+            <option value="">--Select Business Type--</option>
+            <option>Retail</option>
+            <option>Wholesale</option>
+            <option>Service Provider</option>
+            <option>Manufacturer</option>
+        </select>
+
+        <label>Country of Origin</label>
+        <select name="country" required>
+            <option value="">--Select Country--</option>
+            <option>Kenya</option>
+            <option>Uganda</option>
+            <option>Tanzania</option>
+            <option>Rwanda</option>
+            <option>South Africa</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>China</option>
+            <option>India</option>
+        </select>
+
+        <label>Business Description</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Register Business</button>
+    </form>
+</div>
+
+</body>
+</html>
